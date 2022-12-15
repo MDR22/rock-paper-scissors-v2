@@ -3,6 +3,6 @@ function getComputerChoice () {
     const computerChoiceArray = ["rock",
         "paper",
         "scissors"];
-    const computerChoiceSelector = (Math.floor(Math.Random) * computerChoiceArray.length);
+    const computerChoiceSelector = computerChoiceArray[Math.floor(Math.random() * computerChoiceArray.length)];
     return computerChoiceSelector;
 }

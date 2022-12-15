@@ -18,3 +18,8 @@ function playRound(playerSelection, computerSelection) {
         return `You lose - ${computerSelection} beats ${playerSelectionLowerCase}`;
     }
 }
+
+//Console log test to make sure function is working properly
+// const playerSelection = "rock";
+// const computerSelection = getComputerChoice();
+// console.log(playRound(playerSelection, computerSelection));

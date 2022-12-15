@@ -13,6 +13,7 @@ function playRound(playerSelection, computerSelection) {
     if (playerSelectionLowerCase === computerSelection) {
         return `It's a tie - you both chose ${playerSelectionLowerCase}`;
     } else if (playerSelectionLowerCase === "rock" && computerSelection === "scissors" || playerSelectionLowerCase === "paper" && computerSelection === "rock" || playerSelectionLowerCase === "scissors" && computerSelection === "paper") {
+        
         return `You win - ${playerSelectionLowerCase} beats ${computerSelection}`;
     } else {
         return `You lose - ${computerSelection} beats ${playerSelectionLowerCase}`;
@@ -20,6 +21,13 @@ function playRound(playerSelection, computerSelection) {
 }
 
 //Console log test to make sure function is working properly
-// const playerSelection = "rock";
-// const computerSelection = getComputerChoice();
+// const playerSelection = prompt("Choose your weapon - rock, paper, or scissors");
+const computerSelection = getComputerChoice();
 // console.log(playRound(playerSelection, computerSelection));
+
+//Create game function that plays 5 rounds, keeps score, and reports winner at the end
+function game() {
+    for (let i = 0; i < 5; i++) {
+        let playerSelection = prompt("Choose your weapon - rock, paper, or scissors");
+    }
+}
